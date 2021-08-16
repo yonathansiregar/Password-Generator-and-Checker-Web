@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/66649f8b35.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/mainstyle.css">
+    <link rel="stylesheet" href="assets/css/socialmedia.css">
+    <title>PGCWA | Password Generator & Checker Web App</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to PGCWA !</h1>
+        <p>
+            <span>
+                PGCWA (Password Generator & Checker Web App) is designed and created for you who need a random password.
+            </span>
+            <br>
+            <span>
+                This random password is free and safe to use a password generator for your online accounts.
+            </span>
+            <br>
+            <span>
+                You can also check how strong and secure is your password in here.
+            </span>
+        </p>
+    </header>
+
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label>Password length</label>
+                <input type="number" id="length" min='1' max='9999' placeholder="10" maxlength="20" />
+            </div>
+            <div class="setting">
+                <label>
+                    Include uppercase letters
+                    <span class="example"> (e.g. ABCDEF)</span>
+                </label>
+                <input type="checkbox" id="uppercase" checked />
+            </div>
+            <div class="setting">
+                <label>
+                    Include lowercase letters
+                    <span class="example"> (e.g. abcdef)</span>
+                </label>
+                <input type="checkbox" id="lowercase" checked />
+            </div>
+            <div class="setting">
+                <label>
+                    Include numbers
+                    <span class="example"> (e.g. 123456)</span>
+                </label>
+                <input type="checkbox" id="numbers" checked />
+            </div>
+            <div class="setting">
+                <label>
+                    Include symbols
+                    <span class="example"> (e.g. ~!@#$%^&)</span>
+                </label>
+                <input type="checkbox" id="symbols" checked />
+            </div>
+        </div>
+        <button class="btn btn-large" id="generate"> Generate password </button>
+    </div>
+
+    <div class="container">
+        <h2>Password Checker</h2>
+        <div class="form">
+            <input type="password" id="password-entry">
+            <span id="badge-display"></span>
+        </div>
+    </div>
+
+    <footer>
+        <span>Copyright &copy 2021.</span>
+        <br>
+        <span>Created with <i class="fa fa-heart"></i> by Alfrenanda Yonathan Siregar.</span>
+        <br>
+        <span>All Rights Reserved.</span>
+    </footer>
+
+    <script src="assets/js/clipboard.js" type="text/javascript"></script>
+    <script src="assets/js/passwordChecker.js" type="text/javascript"></script>
+    <script src="assets/js/randomPassword.js" type="text/javascript"></script>
+</body>
+
+</html>
